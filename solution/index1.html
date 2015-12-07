@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">        
+    <title>Front End developer test</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	<style>
+	
+.menu-wrap{
+	with:100%;
+	}
+	
+.clearfix:after {
+	display:block;
+	clear:both;
+}
+	
+	
+	/*---- outline ----*/
+	
+.menu {
+    width:1000px;
+    margin:0px auto;
+}
+ 
+.menu li {
+	border-style: solid;
+    border-width: 0px 1px;
+	border-color: #ffffff;
+    margin:0px;
+    list-style:none;
+    
+}
+ 
+.menu a {
+    transition:all linear 0.15s;
+	color:#ffffff;
+    background-color: #0066ff;
+}
+ /*--*/
+.menu li:hover > a, 
+.menu .current-item > a {
+    background-color: #0099ff;
+}
+ 
+.menu .arrow {
+    font-size:18px;   
+}
+
+
+ 
+ /*---- menu top -----*/
+ 
+.menu > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+    font-size:19px;
+}
+ 
+.menu > ul > li > a {
+    padding:10px 40px;
+    display:inline-block;
+    text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+}
+ 
+
+.upper {
+	text-transform: uppercase;
+}
+
+
+/*---- menu bot ----*/
+/*--*/
+.menu li:hover .sub-menu {
+    z-index: 1;
+    opacity: 1;
+	visibility:visible;
+}
+ 
+.sub-menu {
+    visibility:hidden;
+	width:90%;
+    border-style: solid;
+    border-width: 2px 2px;
+	border-color: #0099ff;
+	border-top-color:#ffffff;
+    padding:5px 0px;
+    position:absolute;
+    top:60%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+}
+ 
+.sub-menu li {
+    display:block;
+    font-size:16px;
+}
+ 
+.sub-menu li a {
+	color: #0099ff;
+	background-color:#ffffff;
+    padding:10px 30px;
+    display:block;
+}
+
+.sub-menu li a:hover, .sub-menu .current-item a {
+    background:#0099ff;
+	color:#ffffff;
+}
+	
+	
+	</Style>
+</head>
+<body>
+
+
+
+<!--
+    Task 1 : Using Object Orientated CSS (OOCSS) create the dropdown menu as pictured below. 
+    We want to see an extensible, flexible solution.
+
+    Please note:
+    1. No Javscript to be used, a pure CSS solution
+    2. The dropdown should animate in on hover, sliding down/up
+    3. Extra points for a fancier animation!
+    4. If Javascript is turned off, the menus should always be visible    
+ -->
+    
+<div class="menu-wrap">
+     <nav class="menu">
+        <ul class="clearfix">
+            <li><a class="upper" href="#">Home</a></li>
+            <li>
+                <a class="upper" href="#">Womens<span class="arrow">&#9660 </span></a>
+				<ul class="sub-menu">
+					<li><a href="#">Outwear</a></li>
+					<li><a href="#">Shoes</a></li>
+					<li><a href="#">Handbags</a></li>
+					<li><a href="#">Leather</a></li>
+					<li><a href="#">Jackets</a></li>
+				</ul>
+            </li>
+            <li>
+				<a class="upper" href="#">Mens<span class="arrow">&#9660 </span></a>
+			    <ul class="sub-menu">
+                    <li><a href="#">Outwear</a></li>
+                    <li><a href="#">Shoes</a></li>
+                    <li><a href="#">Wallets</a></li>
+                    <li><a href="#">Leather</a></li>
+                    <li><a href="#">Jackets</a></li>
+                </ul>
+			</li>
+            <li><a class="upper" href="#">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="clearfix"></div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

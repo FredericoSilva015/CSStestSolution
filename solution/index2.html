@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">        
+    <title>Front End developer test</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	
+	<style>
+	
+	/*---- cleaning ----*/
+.accordion,
+.accordion ul,
+.accordion li,
+.accordion a,
+.accordion span {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+}
+ 
+	.accordion li {
+		list-style: none;
+	}
+	
+	/*---- formating main menu----*/
+	
+.accordion li > a {
+    display: block;
+    position: relative;
+    min-width: 110px;
+    padding: 0 10px 0 40px;
+	color: #ffffff;
+    font: bold 12px/32px Arial, sans-serif;
+    background:#0066ff;
+	border-style: solid;
+    border-width: 1px 0px;
+	border-color: #ffffff;
+}
+
+.parent {
+	text-transform: uppercase;
+}
+
+.accordion li > a:hover {
+	color:#ffffff;
+	background:#0099ff
+	
+}
+
+/*---- formating sub menu----*/
+
+.sub-menu li a {
+    color: #0066ff;
+    background: #ffffff;
+}
+ 
+.sub-menu li:last-child a { border: none; }
+ 
+.sub-menu li > a span {
+    color: #0066ff;
+    background: transparent;
+}
+ 
+.accordion li > .sub-menu {
+    height: 0;
+    overflow: hidden;
+}
+ 
+.accordion li:hover  .sub-menu {
+    height: 100%;
+}
+
+	</style>
+	
+</head>
+<body>
+
+
+
+<!--
+    Task 2 : Using the CSS and markup you created in the previous task, extend your solution to create an accordian style menu.
+
+    Please note:
+    1. The panels should appear in on hover
+    2. The animation should be the same as the drop down menu
+    3. If Javascript is turned off the panel should be visible
+    4. All panels should be closed on page load
+
+ -->
+
+    
+
+    <ul class="accordion">
+	
+        <li><a class="parent"  href="#">Home</a></li>
+		
+        <li><a class="parent"  href="#">Womens<span> &#9660 </span></a>
+				<ul class="sub-menu">
+					<li><a href="#">Outwear</a></li>
+					<li><a href="#">Shoes</a></li>
+					<li><a href="#">Handbags</a></li>
+					<li><a href="#">Leather</a></li>
+					<li><a href="#">Jackets</a></li>
+				</ul>
+		</li>
+		
+        <li><a class="parent" href="#">Mens<span> &#9660 </span></a>
+				<ul class="sub-menu">
+                    <li><a href="#">Outwear</a></li>
+                    <li><a href="#">Shoes</a></li>
+                    <li><a href="#">Wallets</a></li>
+                    <li><a href="#">Leather</a></li>
+                    <li><a href="#">Jackets</a></li>
+                </ul>
+		</li>
+		
+        <li><a class="parent"  href="#">Contact</a></li>
+		
+    </ul>
+
+
+
+
+</body>
+</html>
